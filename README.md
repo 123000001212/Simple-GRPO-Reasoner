@@ -58,7 +58,16 @@ python preprocess_x_r1_750.py
 accelerate launch --config_file ./configs/config.yaml train_x_r1_750.py
 ```
 
+Others: configure the settings based on your machine.
+
+```
+python preprocess_x_r1_750.py
+accelerate config
+accelerate launch train_x_r1_750.py
+```
+
 ## Acknowledge
+
 We run our experiments based on [TRL](https://huggingface.co/docs/trl/index).
 
 We utilize [Qwen2.5-1.5B](https://github.com/QwenLM/Qwen2.5) base model.
