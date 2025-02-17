@@ -39,15 +39,24 @@ Assistant:
 - torch==2.4.0+cu121
 - datasets==3.2.0
 - trl==0.15.0
+- deepspeed==0.16.3
 
 Note: We used 2xA6000 GPUs to train Qwen2.5-1.5B model, make sure you have enough VRAM.
 
 ## Run the code
+
+Single GPU
+
 ```
 bash ./train.sh
 ```
 
+2xA6000
 
+```
+python preprocess_x_r1_750.py
+accelerate launch --config_file ./configs/config.yaml train_x_r1_750.py
+```
 
 ## Acknowledge
 We run our experiments based on [TRL](https://huggingface.co/docs/trl/index).
