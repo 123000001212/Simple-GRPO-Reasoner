@@ -9,7 +9,7 @@ Through GRPO, we've observed an increase in response length and an enhancement i
 - Put answer in `\boxed{}` format: +0.1
 - Correct answer: +1
 
-Note: We did not design the reward to force the model to produce the \<think>\</think> and \<answer>\</answer> format because we found it challenging for a 1.5B model to generate such formats. Instead, we use a `'think step by step'` prompt to encourage the model to think more comprehensively.
+Note: We did not design the reward to force the model to produce the \<think>\</think> and \<answer>\</answer> format because we found it challenging for a 1.5B base model to generate such formats. Instead, we use a `'think step by step'` prompt to encourage the model to think more comprehensively.
 
 ## Results
 
