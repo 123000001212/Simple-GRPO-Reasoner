@@ -17,9 +17,24 @@ Note: We did not design the reward to force the model to produce the \<think>\</
 
 ![results](./figs/results.png)
 
+## Example
 
+Prompt:
+
+```
+A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning process and answer are enclosed within <think> </think> and \boxed{} tags, respectively, i.e., <think> reasoning process here </think> The answer is \boxed{your answer}.
+```
+
+User:
+
+![user](./figs/user.png)
+
+Assistant:
+
+![assistant](./figs/assistant.png)
 
 ## Requirements
+
 - python 3.9.21
 - torch==2.4.0+cu121
 - datasets==3.2.0
@@ -32,19 +47,7 @@ Note: We used 2xA6000 GPUs to train Qwen2.5-1.5B model, make sure you have enoug
 bash ./train.sh
 ```
 
-## Example
 
-Prompt:
-```
-A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning process and answer are enclosed within <think> </think> and \boxed{} tags, respectively, i.e., <think> reasoning process here </think> The answer is \boxed{your answer}.
-```
-User:
-
-![user](./figs/user.png)
-
-Assistant:
-
-![assistant](./figs/assistant.png)
 
 ## Acknowledge
 We run our experiments based on [TRL](https://huggingface.co/docs/trl/index).
