@@ -1,0 +1,2 @@
+python preprocess_x_r1_750.py
+python train_x_r1_750.py
