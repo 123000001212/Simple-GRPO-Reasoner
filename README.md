@@ -29,7 +29,7 @@ User:
 
 ![user](./figs/user.png)
 
-Assistant:
+Assistant: Let me solve this step by step. \<think>
 
 ![assistant](./figs/assistant.png)
 
